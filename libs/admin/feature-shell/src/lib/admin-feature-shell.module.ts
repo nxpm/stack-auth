@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { AdminDataAccessAuthModule, IsLoggedInGuard } from '@stack-auth/admin/data-access-auth'
+import { AdminDataAccessCoreModule } from '@stack-auth/admin/data-access-core'
 import { AdminLayoutComponent } from '@stack-auth/admin/layout'
 
 const routes: Routes = [
   {
     path: '',
     component: AdminLayoutComponent,
+    canActivate: [IsLoggedInGuard],
     children: [
-      // Application routes here
       { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
       {
         path: 'about',
@@ -27,6 +29,6 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forRoot(routes)],
+  imports: [CommonModule, AdminDataAccessCoreModule, AdminDataAccessAuthModule, RouterModule.forRoot(routes)],
 })
 export class AdminFeatureShellModule {}

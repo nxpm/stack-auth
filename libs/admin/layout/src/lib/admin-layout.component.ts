@@ -27,5 +27,8 @@ export class AdminLayoutComponent {
   appName = 'Admin'
   footerHtml = `Copyright &copy; ${new Date().getFullYear()}`
   linksLeft: { label: string; route: string }[] = [{ label: 'Dashboard', route: '/dashboard' }]
-  linksRight: { label: string; route: string }[] = [{ label: 'About', route: '/about' }]
+  linksRight: { label: string; route: string }[] = [
+    { label: 'About', route: '/about' },
+    { label: 'Logout', route: '/logout' },
+  ]
 }

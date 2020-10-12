@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@stack-auth/admin/assets": ["libs/admin/assets/src/index.ts"],
+      "@stack-auth/admin/data-access-auth": ["libs/admin/data-access-auth/src/index.ts"],
       "@stack-auth/admin/data-access-core": ["libs/admin/data-access-core/src/index.ts"],
       "@stack-auth/admin/feature-about": ["libs/admin/feature-about/src/index.ts"],
       "@stack-auth/admin/feature-auth": ["libs/admin/feature-auth/src/index.ts"],

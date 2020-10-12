@@ -4,12 +4,12 @@ import { Routes, RouterModule } from '@angular/router'
 import { AdminDataAccessAuthModule } from '@stack-auth/admin/data-access-auth'
 import { AdminUiFormModule } from '@stack-auth/admin/ui-form'
 import { AuthPageModule } from '../components/auth-page/auth-page.module'
-import { LoginComponent } from './login.component'
+import { LogoutComponent } from './logout.component'
 
-const routes: Routes = [{ path: '', component: LoginComponent }]
+const routes: Routes = [{ path: '', component: LogoutComponent }]
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LogoutComponent],
   imports: [CommonModule, RouterModule.forChild(routes), AdminUiFormModule, AuthPageModule, AdminDataAccessAuthModule],
 })
-export class LoginModule {}
+export class LogoutModule {}

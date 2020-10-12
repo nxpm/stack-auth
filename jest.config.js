@@ -17,5 +17,6 @@ module.exports = {
     '<rootDir>/libs/admin/style',
     '<rootDir>/libs/admin/ui-form',
     '<rootDir>/libs/admin/feature-auth',
+    '<rootDir>/libs/admin/data-access-auth',
   ],
 }

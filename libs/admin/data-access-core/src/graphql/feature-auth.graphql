@@ -7,8 +7,9 @@ fragment UserTokenDetails on UserToken {
 
 fragment UserDetails on User {
   id
-  name
   username
+  firstName
+  lastName
   avatarUrl
   email
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core'
 import { FormGroup } from '@angular/forms'
+import { Store } from '@ngrx/store'
+import { register } from '@stack-auth/admin/data-access-auth'
 import { AdminUiFormField } from '@stack-auth/admin/ui-form'
 
 @Component({
@@ -12,14 +14,16 @@ import { AdminUiFormField } from '@stack-auth/admin/ui-form'
 export class RegisterComponent {
   form = new FormGroup({})
   fields = [
-    AdminUiFormField.email('email', { label: 'Email', required: true }),
+    AdminUiFormField.email('email', { label: 'Email', required: true }, { focus: true }),
     AdminUiFormField.password('password', { label: 'Password', required: true }),
     AdminUiFormField.input('username', { label: 'Username', required: false }),
     AdminUiFormField.input('firstName', { label: 'First name', required: false }),
     AdminUiFormField.input('lastName', { label: 'Last name', required: false }),
   ]
 
-  public submit(payload) {
-    console.log(payload)
+  constructor(private readonly store: Store) {}
+
+  public submit(input) {
+    this.store.dispatch(register({ input }))
   }
 }

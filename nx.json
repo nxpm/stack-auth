@@ -32,6 +32,9 @@
     "admin-assets": {
       "tags": ["scope:admin", "type:assets"]
     },
+    "admin-data-access-auth": {
+      "tags": ["scope:admin", "type:data-access"]
+    },
     "admin-data-access-core": {
       "tags": ["scope:admin", "type:data-access"]
     },

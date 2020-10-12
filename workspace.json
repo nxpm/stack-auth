@@ -118,6 +118,36 @@
         }
       }
     },
+    "admin-data-access-auth": {
+      "projectType": "library",
+      "root": "libs/admin/data-access-auth",
+      "sourceRoot": "libs/admin/data-access-auth/src",
+      "prefix": "auth",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/admin/data-access-auth/tsconfig.lib.json",
+              "libs/admin/data-access-auth/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/admin/data-access-auth/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/admin/data-access-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
     "admin-data-access-core": {
       "projectType": "library",
       "root": "libs/admin/data-access-core",
