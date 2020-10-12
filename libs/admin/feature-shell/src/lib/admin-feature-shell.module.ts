@@ -22,10 +22,12 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then((m) => m.NotFoundModule) },
   {
     path: '',
     loadChildren: () => import('@stack-auth/admin/feature-auth').then((m) => m.AdminFeatureAuthModule),
   },
+  { path: '**', redirectTo: '/not-found' },
 ]
 
 @NgModule({
