@@ -20,6 +20,10 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: '',
+    loadChildren: () => import('@stack-auth/admin/feature-auth').then((m) => m.AdminFeatureAuthModule),
+  },
 ]
 
 @NgModule({

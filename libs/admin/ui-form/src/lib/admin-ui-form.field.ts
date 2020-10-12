@@ -108,5 +108,3 @@ export class AdminUiFormField implements FormlyFieldConfig {
     return AdminUiFormField.field('rating', key, { ...templateOptions }, { ...options })
   }
 }
-
-export class AdminUiFormField extends AdminUiFormField {}
