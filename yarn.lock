@@ -2102,6 +2102,14 @@
   resolved "https://registry.yarnpkg.com/@kikstart-playground/graphql-intercom/-/graphql-intercom-1.4.1.tgz#3be03130668a2fec6169f107df52db788ff898bc"
   integrity sha512-WVe2xOXJIyTcgFxQmMHpnXHj/aYhh+eyC47mpjYVleToHQWIo79GU+RXbNuBN0t3rDPm3ldFMUPXkSmizHDc5Q==
 
+"@larscom/ngrx-store-storagesync@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@larscom/ngrx-store-storagesync/-/ngrx-store-storagesync-6.2.2.tgz#ae8ee47332ca8c1a4895325cb3ecdc08f83d1b39"
+  integrity sha512-LYGNfduYHSusKTgvBd2/1Y2exo/J8hteXkQHZzf5xpsQ4hViaQn9icoeVS3FMNA66FYXYpijvVzhUU5euhvtxQ==
+  dependencies:
+    lodash-es ">=4.0.0"
+    tslib "^2.0.0"
+
 "@nestjs/common@^7.0.0":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.4.4.tgz#400011464792e446949e9cb719bdf7ede31da725"
@@ -5841,6 +5849,11 @@ deep-is@^0.1.3, deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
+deepmerge@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+  integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
+
 deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
@@ -9265,6 +9278,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@>=4.0.0:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
@@ -9913,6 +9931,14 @@ next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
+
+ngrx-store-localstorage@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/ngrx-store-localstorage/-/ngrx-store-localstorage-10.1.0.tgz#76aee0d5e825119ebc8c8eef34b7902d3cc58385"
+  integrity sha512-fjDzDQwSrBbOtL5A8gAuUvh0NeFEgBNzxRdwT/HkMV7kJ5Ng+75JoyYY9bcmCx7car/I/XLFKSl0u9/vJV73YQ==
+  dependencies:
+    deepmerge "^3.2.0"
+    tslib "^2.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"
