@@ -15,7 +15,23 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@stack-auth/admin/assets": ["libs/admin/assets/src/index.ts"],
+      "@stack-auth/admin/data-access-core": ["libs/admin/data-access-core/src/index.ts"],
+      "@stack-auth/admin/feature-about": ["libs/admin/feature-about/src/index.ts"],
+      "@stack-auth/admin/feature-auth": ["libs/admin/feature-auth/src/index.ts"],
+      "@stack-auth/admin/feature-core": ["libs/admin/feature-core/src/index.ts"],
+      "@stack-auth/admin/feature-dashboard": ["libs/admin/feature-dashboard/src/index.ts"],
+      "@stack-auth/admin/feature-shell": ["libs/admin/feature-shell/src/index.ts"],
+      "@stack-auth/admin/layout": ["libs/admin/layout/src/index.ts"],
+      "@stack-auth/admin/style": ["libs/admin/style/src/index.ts"],
+      "@stack-auth/admin/ui-form": ["libs/admin/ui-form/src/index.ts"],
+      "@stack-auth/api-app-module": ["apps/api/src/app/app.module.ts"],
+      "@stack-auth/api/data-access-auth": ["libs/api/data-access-auth/src/index.ts"],
+      "@stack-auth/api/data-access-core": ["libs/api/data-access-core/src/index.ts"],
+      "@stack-auth/api/feature-auth": ["libs/api/feature-auth/src/index.ts"],
+      "@stack-auth/api/feature-core": ["libs/api/feature-core/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
