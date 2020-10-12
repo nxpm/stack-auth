@@ -12,7 +12,6 @@ export class IsLoggedInGuard implements CanActivate {
   canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.store.select(getAuthUser).pipe(
       map((user) => {
-        console.log(user)
         if (!user) {
           console.log('You are not logged in!')
           return this.router.parseUrl('/login')
